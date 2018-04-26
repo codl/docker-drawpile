@@ -4,7 +4,7 @@ MAINTAINER Corentin Delcourt <codl@codl.fr>
 ENV DRAWPILE_VERSION 2.0.10
 
 RUN apt-get update && \
-    apt-get install -y git cmake extra-cmake-modules qtbase5-dev g++ curl libkf5archive-dev && \
+    apt-get install -y cmake extra-cmake-modules qtbase5-dev g++ curl libkf5archive-dev && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
